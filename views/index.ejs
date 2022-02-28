@@ -9,6 +9,13 @@
   <body>
     <h1>Guia do programador</h1>
     <hr />
-    <h3>aaaaaaaaaaaaaaaaaaaaaa</h3>
+    <h3>
+      Olá <%=nome %> você está programando em <%=leng %> na empresa <%=empresa%>
+    </h3>
+    <% if(msg) {%>
+    <h3>Isso é uma mensagem de erro!</h3>
+    <% }else{ %>
+    <h3>Não tem erro!</h3>
+    <% } %>
   </body>
 </html>
