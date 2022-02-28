@@ -4,12 +4,8 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.get("/:nome/:leng", (req, res) => {
-  res.render("index", {
-    ...req.params,
-    empresa: "dddd",
-    msg: false,
-  });
+app.get("/", (req, res) => {
+  res.render("index");
 });
 
 app.listen("8080", () => {
